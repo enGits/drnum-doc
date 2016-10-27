@@ -1,7 +1,7 @@
 # DrNUM
 
 ## Documentation
-This GitHub repository serves as the central place for DrNUM documentation. It contains several things:
+This GitHub repository will serve as the central place for DrNUM documentation. It will contain several things:
 
 1. user documentation as a GitHub wiki ([here](https://github.com/enGits/drnum-doc/wiki))
 2. bugs, feature requests, and other issues in the GitHub issue tracker([here](https://github.com/enGits/drnum-doc/wiki))

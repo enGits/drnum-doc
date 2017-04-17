@@ -1,0 +1,5 @@
+string   name           = Y;
+vec3_t   origin         = (0, 1e-3, 0);
+vec3_t   normal         = (0, 1, 0);
+string   offsets        = {0};
+bool     clip-G-level   = yes;

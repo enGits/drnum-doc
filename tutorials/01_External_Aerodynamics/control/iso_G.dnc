@@ -1,0 +1,4 @@
+string  name         = walls;
+string  variable     = G;
+list    values       = {0};
+bool    clip-G-level = false;

@@ -1,0 +1,10 @@
+real   Ma1            = 0.025000;
+real   Ma2            = 0.200000;
+real   amp            = 0.200000;
+real   amp-p          = 1.000000;
+real   MaBias         = 5.000000e-03;
+
+bool   non-mixing     = no;
+real   rho-spec-min   = 0;
+real   rho-spec-max   = 1000.000000;
+real   ad-coeff       = 2.500000e-04;

@@ -1,0 +1,51 @@
+real     scale                  = 1;
+
+real     reference-velocity     = 694.6;
+real     free-stream-velocity   = 694.6;
+bool     atmos-layer            = no;
+real     reference-length       = 50;
+real     AoA                    = 0;
+real     slip-angle             = 0;
+real     pressure               = 1e5;
+real     temperature            = 300;
+bool     inviscid               = no;
+bool     laminar                = no;
+int      yminus-bc              = 1;
+int      zminus-bc              = 1;
+bool     fix-farfield           = no;
+vec3_t   x1-far                 = (-80, 0, 0);
+vec3_t   x2-far                 = (0, 80, 80);
+
+string   boundaries             = walls;
+
+real     write-interval         = 1;
+real     print-interval         = 0.05;
+real     CFL-number             = 0.75;
+real     total-time             = 3;
+int      num-rk-steps           = 3;
+
+bool     mesh-preview           = no;
+bool     single-iteration       = no;
+string   restart-file           = none;
+bool     start-from-zero        = no;
+bool     inside-at-rest         = yes;
+bool     inside-random          = yes;
+real     random-strength        = 0.1;
+vec3_t   rotation-origin        = (0, 0, 0);
+vec3_t   rotation-axis          = (0, 0, 1.000000);
+real     rotation-omega         = 0;
+vec3_t   gravity                = (0, 0, 0);
+
+int      cuda-device            = 0;
+int      thread-limit           = 512;
+string   flux                   = MULTISPEED;
+bool     file-output            = yes;
+
+string   reconstruction         = 2nd-order;
+
+bool     post-process-only      = no;
+bool     write-full-VTK         = no;
+int      first-process-step     = 0;
+int      last-process-step      = 0;
+string   cut-planes             = {Y, Z};
+string   iso-surfaces           = {G};

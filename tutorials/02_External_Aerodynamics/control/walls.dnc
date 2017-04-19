@@ -1,0 +1,4 @@
+string   type               = slip;
+string   geometry           = box1.stl;
+real     wall-temperature   = 300;
+real     offset             = 0;

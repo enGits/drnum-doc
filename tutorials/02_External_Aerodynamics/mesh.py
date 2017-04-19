@@ -16,8 +16,21 @@ mesh.x1_far = (-4.4, -4.4, -4.4)
 mesh.x2_far = ( 4.4,  4.4,  4.4)
 
 mesh.createRectGrid(x, y, z)
-mesh.setResFromFile("box1.stl", 0.03, inside=True)
 
-mesh.create()
+# To use setResFromFile, uncomment the next line:
+#mesh.setResFromFile("box1.stl", 0.03, inside=True)
+
+# And comment the following lines:
+middle_patch = mesh.findPatch(0, 0, 0)
+middle_patch.setRes(0.015)
+mesh.setGrading1(1.5)
+mesh.setMinDim(4)
+mesh.update()
+#
+
+# Create farfield mesh and merge to existing mesh
+mesh.createExternalAeroMesh()
+
+# Write mesh
 mesh.save("patches/standard.grid")
 mesh.printInfo()

@@ -23,6 +23,6 @@ M.super_cell_size = 5.0
 M.cell_size       = 0.1
 
 M.quarterGeometry()
-M.create()
+M.createExternalAeroMesh()
 M.save('patches/standard.grid')
 M.printInfo()
